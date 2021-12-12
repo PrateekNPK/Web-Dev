@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>MyPokeDex</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
+    body{
+     width: 80vw;
+        height:100vh;
+        background-color:white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Oswald', sans-serif;
+    }
+    nav{
+    
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+    }
+    li{
+        padding-left: 40px;
+        padding-right: 10px;
+        font-size: 20px;
+    }
+    li:hover{
+        padding-left: 40px;
+        padding-right: 10px;
+        font-size: 20px;
+        
+        text-decoration: underline;
+    }
+    #igm{
+        width: 70px;
+        height:60px;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+    h2{
+        font-size: 30px;
+        color: rgb(253, 104, 104);
+        margin-top: 30px;
+    }
+    a{
+        color:red;
+        margin-right: 50px;
+        text-decoration: none;
+        }
+        a:hover{
+            color:black;
+        margin-right: 50px;
+        text-decoration: none; 
+        }
+        #we{
+            margin-left: 200px;
+        }
+        .grass{
+            background-color: rgb(74, 230, 74);
+            color: white;
+            height: 30px;
+            width: 100px;
+            border: 1px solid rgb(74, 230, 74);
+            border-radius: 30px;
+        }
+        .poison{
+            background-color: rgb(119, 61, 228);
+            color: white;
+            height: 30px;
+            width: 100px;
+            border: 1px solid rgb(119, 61, 228);
+            border-radius: 30px;
+        }
+        .water{
+            background-color: rgb(78, 192, 236);
+            color: white;
+            height: 30px;
+            width: 100px;
+            border: 1px solid rgb(78, 192, 236);
+            border-radius: 30px;
+        }
+        .fire{
+            background-color: rgb(255, 72, 0);
+            color: white;
+            height: 30px;
+            width: 100px;
+            border: 1px solid rgb(255, 72, 0);
+            border-radius: 30px;
+        }
+        .flying{
+            background-color:rgb(140, 155, 207);
+            color: white;
+            height: 30px;
+            width: 100px;
+            border: 1px solid rgb(140, 155, 207);
+            border-radius: 30px;
+        }
+        .fighting{
+            background-color: rgb(163, 36, 36);
+            color: white;
+            height: 30px;
+            width: 100px;
+            border: 1px solid rgb(163, 36, 36);
+            border-radius: 30px;
+        }
+        .ghost{
+            background-color: rgb(68, 29, 29);
+            color: white;
+            height: 30px;
+            width: 100px;
+            border: 1px solid rgb(68, 29, 29);
+            border-radius: 30px;
+        }
+        .dragon{
+            background-color: rgb(4, 168, 127);
+            color: white;
+            height: 30px;
+            width: 100px;
+            border: 1px solid rgb(4, 168, 127);
+            border-radius: 30px;
+        }
+</style>
+<body>
+    <nav>
+        <ul>
+            <a href="file:///C:/Users/MY%20PC/Desktop/Prateek/web%20dev/MyPokeDex.html"><img id="igm" src="https://www.freeiconspng.com/thumbs/pokeball-png/file-pokeball-png-0.png"></a>
+            <input style="height: 20px; width: 350px; margin-top: 40px; margin-left: 80px;border: 2px solid red;" type="text" placeholder="Explore"><img width="45px" height="30px" style="margin-top: 40px;" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-512.png" alt="">
+            <li style="margin-top: 30px;" id="we" ><a id="rte" href="MyPokeDex.html">Home</a></li>
+            <li style="margin-top: 30px;" id="s"><a href="PokeDex.html">PokeDex</a></li>
+            <li style="margin-top: 30px;" id="e"><a href="Pokemon episodes.html">Episodes</a></li>
+            
+        </ul>
+    </nav><br>
+    <div style="height: 60PX; background-color: rgb(241, 30, 30); width: 100vw;">
+        <h1 style="color: white;font-size: 30px;text-align: center;">PokeDex</h1>
+    </div>
+    <table>
+        <tr style="width: 100vw;">
+            <th style="width: 25vw;text-align: center;">poke num</th>
+            <th style="width: 25vw; text-align: center;">Pokemon</th>
+            <th style="width: 25vw;text-align: center;">Type</th>
+            <th style="width: 25vw;text-align: center;">Power</th>
+            <th style="width: 25vw;text-align: center;">HP</th>
+            <th style="width: 25vw;text-align: center;">Speed</th>
+            <th style="width: 25vw;text-align: center;">Attack</th>
+            <th style="width: 25vw;text-align: center;">Defence</th>
+            <th style="width: 25vw;text-align: center;">Sp.Atk</th>
+            <th style="width: 25vw;text-align: center;">Sp.Def</th>
+
+        </tr>
+        <tr style="width: 100vw;" >
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">001</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;"> <img src="https://img.pokemondb.net/sprites/sword-shield/icon/bulbasaur.png" alt=""> Bulbasaur</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"><button class="grass" style="margin-bottom: 6px;">Grass</button><br><button class="poison">Poison</button></td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;">318</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">45</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">45</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">49</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">49</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">65</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">65</td>
+        </tr>
+        <tr style="width: 100vw;">
+            <td style="width: 25vw;text-align: center;border-bottom: 1px solid black;">002</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"> <img src="https://img.pokemondb.net/sprites/sword-shield/icon/ivysaur.png" alt=""> Ivysaur</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"><button class="grass" style="margin-bottom: 6px;">Grass</button><br><button class="poison">Poison</button></td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">405</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">60</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">60</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">62</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">63</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">80</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">80</td>
+        </tr>
+        <tr style="width: 100vw;">
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">003</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"> <img src="https://img.pokemondb.net/sprites/sword-shield/icon/venusaur.png" alt=""> Venasaur</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"><button class="grass" style="margin-bottom: 6px;">Grass</button><br><button class="poison">Poison</button></td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">525</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">80</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">80</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">82</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">83</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">100</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">100</td>
+        </tr>
+        <tr style="width: 100vw;">
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">004</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"> <img src="https://img.pokemondb.net/sprites/sword-shield/icon/squirtle.png" alt=""> Squirtle</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"><button class="water" style="margin-bottom: 6px;">Water</button></td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">314</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">44</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">43</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">48</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">65</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">50</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">64</td>
+        </tr>
+        <tr style="width: 100vw;">
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">005</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"> <img src="https://img.pokemondb.net/sprites/sword-shield/icon/wartortle.png" alt=""> Wartortle</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"><button class="water" style="margin-bottom: 6px;">Water</button></td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">405</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">59</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">58</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">63</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">80</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">65</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">80</td>
+        </tr>
+        <tr style="width: 100vw;">
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">006</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"> <img src="https://img.pokemondb.net/sprites/sword-shield/icon/blastoise.png" alt=""> Blastoise</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"><button class="water" style="margin-bottom: 6px;">Water</button></td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">530</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">79</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">78</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">83</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">100</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">85</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">105</td>
+        </tr>
+        <tr style="width: 100vw;">
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">007</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"> <img src="https://img.pokemondb.net/sprites/sword-shield/icon/charmander.png" alt=""> Charmander</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"><button class="fire" style="margin-bottom: 6px;">Fire</button></td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">309</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">39</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">65</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">52</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">43</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">60</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">50</td>
+        </tr>
+        <tr style="width: 100vw;">
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">008</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"> <img src="https://img.pokemondb.net/sprites/sword-shield/icon/charmeleon.png" alt=""> Charmeleon</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"><button class="fire" style="margin-bottom: 6px;">Fire</button></td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">405</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">58</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">80</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">64</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">58</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">80</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">65</td>
+        </tr>
+        <tr style="width: 100vw;">
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">009</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"> <img src="https://img.pokemondb.net/sprites/sword-shield/icon/charizard.png" alt=""> Charizard</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"><button class="fire" style="margin-bottom: 6px;">Fire</button><button class="flying" style="margin-bottom: 6px;">Flying</button></td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">534</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">78</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">100</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">84</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">78</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">109</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">85</td>
+        </tr>
+        <tr style="width: 100vw;">
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">010</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"> <img src="https://img.pokemondb.net/sprites/sword-shield/icon/hitmonchan.png" alt=""> Hitmochan</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"><button class="fighting" style="margin-bottom: 6px;">Fighting</button></td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">534</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">78</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">100</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">84</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">78</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">109</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">85</td>
+        </tr>
+        <tr style="width: 100vw;">
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">011</td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"> <img src="https://img.pokemondb.net/sprites/sword-shield/icon/giratina-altered.png" alt=""> Giratina<p style="margin-left: 30px;">Altered form</p></td>
+            <td style="width: 30vw;text-align: center; border-bottom: 1px solid black;"><button class="ghost" style="margin-bottom: 6px;">Ghost</button><button class="dragon" style="margin-bottom: 6px;">Dragon</button></td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">534</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">78</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">100</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">84</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">78</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">109</td>
+            <td style="width: 25vw;text-align: center; border-bottom: 1px solid black;">85</td>
+        </tr>
+    </table>
+</body>
+</html>
