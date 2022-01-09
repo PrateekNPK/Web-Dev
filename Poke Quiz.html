@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="shortcut icon" href="https://www.pngfind.com/pngs/m/439-4391735_pokemon-logo-png-simbolo-pokemon-png-transparent-png.png" type="image/x-icon">
+    <title>Pokemon</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+        background-color: rgb(240, 239, 239);
+    }
+    li {
+  display: inline;
+}
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: rgb(0, 117, 250);
+  text-decoration: none;
+}
+ul {
+  background-color: rgb(0, 117, 250);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 117, 250);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: white;
+  color: rgb(0, 117, 250);
+}
+.active {
+  background-color: rgb(238, 210, 54);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Pokemon.html">Home</a></li>
+            <li><a href="Poke Newz.html">News</a></li>
+            <li><a class="active" href="Poke Quiz.html">Quiz</a></li>
+            <li><a href="Poke Info.html">Info</a></li>
+            <li><a href="Pokedex.html">Pokedex</a></li>
+            <li><a href="Pokemon episodes.html">Episodes</a></li>
+            <h2 style="color: white;">Pokemon</h2>
+          </ul>
+
+          
+    </nav>
+    <div style="background-color: rgb(238, 210, 54);height: 50px;color: white;font-size: 30px;">Quizes</div><br>
+    <div style="background-color: white; border-radius: 80px;">
+        <img style="float: left;margin-top: 20px;margin-left: 100px;" src="data:image/png;base64,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" alt="">
+        <h1>Pika Quiz</h1>
+        <p>This is a easy quiz made with easy questions which a poke begginer could answer.</p>
+        <p>Questions : 5</p>
+        <p>Scoring : correct questions +1, Wrong questions 0</p>
+        <p>Level : Begginer</p>
+        <a class="btn btn-success">Start</a><br><br><br>
+    </div><br><br>
+    <div style="background-color: white;border-radius: 80px;">
+        <img style="float: left;margin-top: 20px;margin-left: 100px;height: 280px;" src="https://static.wikia.nocookie.net/monster/images/9/95/Charizard.png/revision/latest?cb=20170708221247">
+        <h1>Chaizard Quiz</h1>
+        <p>This is a normal quiz made with questions which a pokemon fan could answer easily.</p>
+        <p>Questions : 7</p>
+        <p>Scoring : correct questions +2, Wrong questions -1</p>
+        <p>Level : Medium</p>
+        <a class="btn btn-warning">Start</a><br><br><br>
+    </div><br><br>
+    <div style="background-color: white;border-radius: 80px;">
+        <img style="float: left;margin-top: 20px;margin-left: 100px;height: 280px;" src="https://pokestop.io/img/pokemon/deoxys-256x256.png">
+        <h1>Deoxys Quiz</h1>
+        <p>This is a hard quiz made with questions which a Pokemon Master could answer.</p>
+        <p>Questions : 6</p>
+        <p>Scoring : correct questions +2, Wrong questions -2</p>
+        <p>Level : Hard</p>
+        <a class="btn btn-danger">Start</a><br><br><br>
+    </div><br><br>
+    <div style="background-color: white;border-radius: 80px;">
+        <img style="float: left;margin-top: 20px;margin-left: 100px;height: 280px;" src="https://static.pokemonpets.com/images/monsters-images-800-800/107-Hitmonchan.webp">
+        <h1>Hitmochan Quiz</h1>
+        <p>This is a Impossible quiz made with questions which no one could answer.</p>
+        <p>Questions : 3</p>
+        <p>Scoring : correct questions +2, Wrong questions -3</p>
+        <p>Level : Hard</p>
+        <a class="btn btn-danger">Start</a><br><br><br>
+    </div><br><br>
+    <div style="background-color: white;border-radius: 80px;">
+        <img style="float: left;margin-top: 20px;margin-left: 100px;height: 280px;" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/294.png">
+        <h1>Loudred Quiz</h1>
+        <p>This is a nomal quiz made with questions which a pokemon fan could answer easily.</p>
+        <p>Questions : 10</p>
+        <p>Scoring : correct questions +2, Wrong questions -1</p>
+        <p>Level : Medium</p>
+        <a class="btn btn-danger">Start</a><br><br><br>
+    </div><br><br>
+    
+</body>
+</html>
