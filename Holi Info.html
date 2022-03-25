@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+    body{
+        height: 100vh;
+        width: 100vw;
+        text-align: center;
+        background-color: white;
+        font-family: 'Sansita Swashed', cursive;
+    }
+    li {
+  display: inline;
+}
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: rgb(250, 61, 61);
+  text-decoration: none;
+}
+ul {
+  background-color: rgb(250, 61, 61);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(250, 61, 61);
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-right: 4px solid white;
+}
+li a:hover {
+  background-color: white;
+  color: rgb(250, 61, 61);
+}
+.active {
+  background-color: rgb(34, 34, 31);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#div2{
+    background-color: rgb(252, 24, 24);
+    height: 15px;
+}
+p{
+  font-family: 'Nunito', sans-serif;
+font-family: 'Raleway', sans-serif;
+}
+nav{
+  font-family: 'Syne Mono', monospace;
+}
+#input{
+  margin-right: 60px;
+}
+</style>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="LadyBug.html">Home</a></li>
+                <li><a class="active" href="Holi Info.html">Info</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <input id="input" style="margin-left: 500px;" type="text" placeholder="search...">
+                <h2 style="color: white;">LadyBug</h2>
+              </ul>
+    
+              
+        </nav>
+    </div>
+    <div id="div2">
+
+    </div>
+    <div>
+        <img width="1440px" height="600px" src="https://www.karnatakatourism.org/wp-content/uploads/2021/03/holi-2021.jpg">
+        <button style="width: 400px;font-size: 20px;margin-right: 1000px;margin-top: 10px;" class="btn btn-dark">Join</button>
+        <br>
+        <h1 id="demo"></h1><br><br>
+        <h1 style="font-size: 60px;">Holi</h1><br>
+        <div>
+          <img style="float: right;height: 200px;margin-right: 100px;margin-bottom: 80px;" src="https://st.depositphotos.com/1052036/2230/v/600/depositphotos_22304205-stock-illustration-kids-playing-holi.jpg" alt="">
+        <h2>What is Holi?</h2>
+        <p style="font-size: 20px;">Holi is a popular ancient Hindu festival, also known as the "Festival of Love",<br> the "Festival of Colours" and the "Festival of Spring".</p><br><br><br>
+      </div><br><br>
+      <div>
+        <img style="float: left;height: 200px;margin-left: 100px;margin-bottom: 80px;" src="https://media.nationalgeographic.org/assets/photos/000/274/27496.jpg" alt="">
+        <h2>Why do we celebrate Holi?</h2>
+        <p style="font-size: 20px;"> The festival celebrates the eternal and divine love of Radha Krishna. It also signifies the triumph of good over evil, as it celebrates the victory of Vishnu as Narasimha Narayana over Hiranyakashipu.</p><br><br><br>
+        </div><br><br>
+        <div>
+          <img style="float: right;height: 200px;margin-right: 100px;margin-bottom: 80px;" src="data:image/jpeg;base64,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" alt="">
+        <h2 >Where is Holi celebrated?</h2>
+        <p style="font-size: 20px;float: left;">It originated and is predominantly celebrated in the South Asia but<br> has also spread to other regions of Asia and parts of the Western world through the Indian diaspora.</p><br><br><br>
+        </div><br><br><br><br><br><br>
+        <div>
+         <img style="float: left;height: 300px;margin-left: 100px;margin-bottom: 80px;" src="https://img.freepik.com/free-vector/hand-drawn-holi-festival-illustration_23-2148864721.jpg?size=338&ext=jpg&ga=GA1.2.97738298.1614106590" alt="">
+        <h2>Holi's advantages</h2>
+        <p style="font-size: 20px;">Holi celebrates the arrival of spring, the end of winter, the blossoming of love and for many, it is a festive day to meet others, play and laugh, forget and forgive, and repair broken relationships. The festival also celebrates the beginning of a good spring harvest season.</p><br><br><br>
+      </div>
+      <div>
+        <h1 style="font-size: 60px;text-align: center;color: rgb(252, 24, 24);">Have a Happy Holi</h1>
+        <h1>Be safe from Corona</h1>
+      </div>
+    </div>
+</body>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("March 8, 2023 00:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+</html>
